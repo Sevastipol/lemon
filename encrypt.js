@@ -1,11 +1,11 @@
-const a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const a = `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&'()*+,-./:;<=>?@[\\]^_\`\{|}~`;
 const all = [];
 let p;
 let encrypt = (c, changer = 3) => {
   var result = ""; // Function scoped
   for (let i = 0; i < c.length; i++) {
     let current = a.indexOf(c[i])
-    if (a[current] != undefined) {
+    if (a[current] != undefined) {.4
     result += (a[current += changer]);
     } else {
       result += " ";
